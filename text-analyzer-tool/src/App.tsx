@@ -1,4 +1,5 @@
 import './App.scss'
+import { AppWrapper } from './AppWrapper'
 import BottomResultBox from './components/BottomResultBox'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
@@ -11,9 +12,7 @@ const App = () => {
       <Navbar />
       <div className="small-container">
         <div className="main-app">
-          <ResultBox />
-          <TextArea />
-          <BottomResultBox />
+          <AppWrapper />
         </div>
       </div>
       <Footer />

@@ -1,26 +1,40 @@
 import './index.scss'
 
-const ResultBox = () => {
+type ResultBoxProps = {
+  countChar: string
+  countWords: number
+  countSentence: number
+  countParagraph: number
+  countPron: number
+}
+
+const ResultBox = ({
+  countChar,
+  countWords,
+  countSentence,
+  countParagraph,
+  countPron,
+}: ResultBoxProps) => {
   const resultBar = [
     {
       title: 'Words',
-      value: 0,
+      value: countWords,
     },
     {
       title: 'Characters',
-      value: 0,
+      value: countChar.length,
     },
     {
       title: 'Sentences',
-      value: 0,
+      value: countSentence,
     },
     {
       title: 'Paragraphs ',
-      value: 0,
+      value: countParagraph,
     },
     {
       title: 'Pronouns',
-      value: 0,
+      value: countPron,
     },
   ]
 
